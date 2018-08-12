@@ -1,6 +1,6 @@
 # LaTeX CV
 
-![CV Screenshot](Rohit_CV.jpg)
+![CV Screenshot](Rohit_CV.png)
 
 
 
