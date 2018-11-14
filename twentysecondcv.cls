@@ -3,8 +3,8 @@
 \NeedsTeXFormat{LaTeX2e}
 
 %----------------------------------------------------------------------------------------
-%	 REQUIRED PACKAGES
-%-----------------------------------------------------------------------	-----------------
+%  REQUIRED PACKAGES
+%-----------------------------------------------------------------------  -----------------
 
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[sfdefault]{ClearSans}
@@ -56,7 +56,7 @@
 \fi
 
 %----------------------------------------------------------------------------------------
-%	 COLOURS
+%  COLOURS
 %----------------------------------------------------------------------------------------
 
 \definecolor{white}{RGB}{255,255,255}
@@ -108,7 +108,7 @@
 
 
 %----------------------------------------------------------------------------------------
-%	 MISC CONFIGURATIONS
+%  MISC CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
 % \renewcommand{\bfseries}{\color{black}} % Make \textbf produce coloured text instead
@@ -118,12 +118,12 @@
 \setlength{\parindent}{0pt} % Disable paragraph indentation
 
 % --------------------------------------------------------------------------------------
-% 	FONTS
+%   FONTS
 %-------------------------------------------------------------------------------------
 \newfontfamily\headingfont[Path = fonts/]{segoeuib.ttf}
 
 %----------------------------------------------------------------------------------------
-%	 SIDEBAR DEFINITIONS
+%  SIDEBAR DEFINITIONS
 %----------------------------------------------------------------------------------------
 
 \setlength{\TPHorizModule}{1cm} % Left margin
@@ -156,50 +156,50 @@
 
 % Command for printing skill progress bars
 \newcommand\programming[1]{ 
-	\renewcommand{\programming}{
-		\begin{tikzpicture}
-        % 	\node [above right] at (0, 4) {$0 \: LOC \: \arrow{3.2} \: 5000 \: LOC$};
-			\foreach [count=\i] \x/\y in {#1}{
-				% \draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
-				% \draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
-			 %   \filldraw[black] (0,0) circle (2pt) node[anchor=south] {$(4.2,5.9)$};
-			     \node [above right] at (0,\i+0.5+0.35) {\textbf{\y}};
-				\node [above right] at (0,\i+0.35) {\x};
-			}
-		\end{tikzpicture}
-	}
+  \renewcommand{\programming}{
+    \begin{tikzpicture}
+        %   \node [above right] at (0, 4) {$0 \: LOC \: \arrow{3.2} \: 5000 \: LOC$};
+      \foreach [count=\i] \x/\y in {#1}{
+        % \draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
+        % \draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
+       %   \filldraw[black] (0,0) circle (2pt) node[anchor=south] {$(4.2,5.9)$};
+           \node [above right] at (0,\i+0.5+0.35) {\textbf{\y}};
+        \node [above right] at (0,\i+0.35) {\x};
+      }
+    \end{tikzpicture}
+  }
 }
 
 \newcommand\lang[1]{ 
-	\renewcommand{\lang}{
-		\begin{tikzpicture}
-        % 	\node [above right] at (0, 4) {$0 \: LOC \: \arrow{3.2} \: 5000 \: LOC$};
-			\foreach [count=\i] \x/\y in {#1}{
-				% \draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
-				% \draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
-			 %   \filldraw[black] (0,0) circle (2pt) node[anchor=south] {$(4.2,5.9)$};
-			     \node [above right] at (0,\i+0.5+0.35) {\textbf{\y}};
-				\node [above right] at (0,\i+0.35) {\x};
-			}
-		\end{tikzpicture}
-	}
+  \renewcommand{\lang}{
+    \begin{tikzpicture}
+        %   \node [above right] at (0, 4) {$0 \: LOC \: \arrow{3.2} \: 5000 \: LOC$};
+      \foreach [count=\i] \x/\y in {#1}{
+        % \draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
+        % \draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
+       %   \filldraw[black] (0,0) circle (2pt) node[anchor=south] {$(4.2,5.9)$};
+           \node [above right] at (0,\i+0.5+0.35) {\textbf{\y}};
+        \node [above right] at (0,\i+0.35) {\x};
+      }
+    \end{tikzpicture}
+  }
 }
 
 \newcommand\projects[1]{ 
-	\renewcommand{\projects}{
-		{#1}
-	}
+  \renewcommand{\projects}{
+    {#1}
+  }
 }
 
 \newcommand\tools[1]{ 
-	\renewcommand{\tools}{
-		{#1}
-	}
+  \renewcommand{\tools}{
+    {#1}
+  }
 }
 \newcommand\concepts[1]{ 
-	\renewcommand{\concepts}{
-		{#1}
-	}
+  \renewcommand{\concepts}{
+    {#1}
+  }
 }
 
 %----------------------------------------------------------------------------------------
@@ -243,7 +243,7 @@
     \renewcommand{\arraystretch}{2}
     \begin{tabular}{p{1cm} @{\hskip 0.5cm}p{5cm}}
       \ifthenelse{\equal{\cvnumberphone}{}}{}{
-      		{$
+          {$
               \begin{array}{l}
               \hspace{4mm} \Huge \textnormal{\faMobile} 
               \end{array}
@@ -283,30 +283,30 @@
     \end{tabular}
 
     %------------------------------------------------
-    \vspace{4mm}
+    \vspace{2mm}
     % \profilesection{Skills}{4cm}
     
     % {\large \textbf{Overview}}
 
-% 	\skills
+%   \skills
         
         %------------------------------------------------
         
-        \vspace{3mm}
+        %\vspace{2mm}
        
-% 	 {\large \textbf{Programming}} 
+%    {\large \textbf{Programming}} 
         \profilesection{Programming}{1.55cm} 
-		 \programming
-		 \vspace{3mm}\\ \\
+     \programming
+     \vspace{2mm}\\ \\
           \profilesection{Languages}{2.5cm} 
-		 \lang
-		
-        \vspace{4mm}
+     \lang
+    
+        \vspace{1mm}
         \\
         % \profilesection{Projects}{3cm} 
         
         %  \projects
-          \profilesection{Concepts }{3cm} 
+          \profilesection{Concepts }{2.5cm} 
         
             \concepts
         \profilesection{Tools }{4cm} 
@@ -318,96 +318,96 @@
 
 
 %----------------------------------------------------------------------------------------
-%	 COLOURED SECTION TITLE BOX
+%  COLOURED SECTION TITLE BOX
 %----------------------------------------------------------------------------------------
 
 % Command to create the rounded boxes around the first three letters of section titles
 \newcommand*\round[2]{%
-	\tikz[baseline=(char.base)]\node[anchor=north west, draw,rectangle, rounded corners, inner sep=1.6pt, minimum size=5.5mm, text height=3.6mm, fill=#2,#2,text=white](char){#1};%
+  \tikz[baseline=(char.base)]\node[anchor=north west, draw,rectangle, rounded corners, inner sep=1.6pt, minimum size=5.5mm, text height=3.6mm, fill=#2,#2,text=white](char){#1};%
 }
 
 \def\@sectioncolor#1#2#3{%
-	{%
-	       %  #1#2#3
-		 #1#2#3%
-	}%
+  {%
+         %  #1#2#3
+     #1#2#3%
+  }%
 }
 
 
 \renewcommand{\section}[1]{
   \par\vspace{\parskip}
-	{%
-		\LARGE\headingfont\color{headercolor}%
-		\@sectioncolor #1%
-	}
+  {%
+    \LARGE\headingfont\color{headercolor}%
+    \@sectioncolor #1%
+  }
   \par\vspace{\parskip}
 }
 
 \renewcommand{\subsection}[1]{
-	\par\vspace{.5\parskip}{%
-		\Large\headingfont\color{headercolor} #1%
-	}
-	\par\vspace{.25\parskip}%
+  \par\vspace{.5\parskip}{%
+    \Large\headingfont\color{headercolor} #1%
+  }
+  \par\vspace{.25\parskip}%
 }
 
 \pagestyle{empty}
 
 %----------------------------------------------------------------------------------------
-%	 LONG LIST ENVIRONMENT
+%  LONG LIST ENVIRONMENT
 %----------------------------------------------------------------------------------------
 
 \setlength{\tabcolsep}{0pt}
 
 % New environment for the long list
 \newenvironment{twenty}{%
-	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
 }{%
-	\end{tabular*}
+  \end{tabular*}
 }
 
 % \newcommand{\twentyitem}[5]{%
-% 	#1&\parbox[t]{0.83\textwidth}{%
-% 		\textbf{#2}% 
-% 		\hfill%
-% 		{\footnotesize#3}\\%
+%   #1&\parbox[t]{0.83\textwidth}{%
+%     \textbf{#2}% 
+%     \hfill%
+%     {\footnotesize#3}\\%
 %         \ifblank{#4}{}{#4 \\}
-% 		#5\vspace{\parsep}%
-% 	}\\
+%     #5\vspace{\parsep}%
+%   }\\
 % }
 
 \newcommand{\twentyitem}[6]{%
-	#1&\parbox[t]{0.83\textwidth}{%
-		\textbf{#3}% 
-		\hfill%
-		{\footnotesize#4}%
+  #1&\parbox[t]{0.83\textwidth}{%
+    \textbf{#3}% 
+    \hfill%
+    {\footnotesize#4}%
         }\\%
     #2&\parbox[t]{0.83\textwidth}{%
-		\ifblank{#5}{}{#5 \\}
-		#6%
-	}\\
+    \ifblank{#5}{}{#5 \\}
+    #6%
+  }\\
 }
 
 %----------------------------------------------------------------------------------------
-%	 SMALL LIST ENVIRONMENT
+%  SMALL LIST ENVIRONMENT
 %----------------------------------------------------------------------------------------
 
 \setlength{\tabcolsep}{0pt}
 
 % New environment for the small list
 \newenvironment{twentyshort}{%
-	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
 }{%
-	\end{tabular*}
+  \end{tabular*}
 }
 
 \newcommand{\twentyitemshort}[2]{%
-	#1&\parbox[t]{0.83\textwidth}{%
-		#2%
-	}\\
+  #1&\parbox[t]{0.83\textwidth}{%
+    #2%
+  }\\
 }
 
 %----------------------------------------------------------------------------------------
-%	 MARGINS AND LINKS
+%  MARGINS AND LINKS
 %----------------------------------------------------------------------------------------
 
 \RequirePackage[left=7.6cm,top=0.1cm,right=1cm,bottom=0.1cm,nohead,nofoot]{geometry}
