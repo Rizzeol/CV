@@ -169,21 +169,29 @@
 		\end{tikzpicture}
 	}
 }
-
 \newcommand\lang[1]{ 
 	\renewcommand{\lang}{
-		\begin{tikzpicture}
+		{#1}
+	}
+}
+
+%\newcommand\lang[1]{ 
+%	\renewcommand{\lang}{
+%		\begin{tikzpicture}
         % 	\node [above right] at (0, 4) {$0 \: LOC \: \arrow{3.2} \: 5000 \: LOC$};
-			\foreach [count=\i] \x/\y in {#1}{
+%			\foreach [count=\i] \x/\y in {#1}{
 				% \draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
 				% \draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
 			 %   \filldraw[black] (0,0) circle (2pt) node[anchor=south] {$(4.2,5.9)$};
-			     \node [above right] at (0,\i+0.5+0.35) {\textbf{\y}};
-				\node [above right] at (0,\i+0.35) {\x};
-			}
-		\end{tikzpicture}
-	}
-}
+%			     \node [above right] at (0,\i+0.5+0.35) {\textbf{\y}};
+%				\node [above right] at (0,\i+0.35) {\x};
+%			}
+%		\end{tikzpicture}
+%	}
+%}
+
+
+
 
 \newcommand\projects[1]{ 
 	\renewcommand{\projects}{
@@ -217,7 +225,7 @@
 
     %------------------------------------------------
     \begin{center}
-        {\includegraphics[width=80mm,height=50mm,clip,keepaspectratio]{Rohit_CV-v1/rohitimg.jpg}}
+        {\includegraphics[width=80mm,height=50mm,clip,keepaspectratio]{Rohit_CV-v3/img/rohitimg.jpg}}
     \end{center}
     
     
@@ -434,4 +442,3 @@
     % sets the opacity at which the bubble text is shown
     bubble text opacity = 1,
 }
-
